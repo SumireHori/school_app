@@ -1,0 +1,64 @@
+<header>
+  <div class="nav_box">
+      <%= form_tag(root_path, method: :get) do %>
+       <p>プログラミングスクール検索サイト</p>
+        <%= image_tag("1556125590 2.jpg") %>
+        <nav>
+          <p>✳︎条件で絞り込み</p>
+          
+          <div class="form_box text_box">
+            <h3>キーワード</h3>
+            <%= text_field_tag("find") %>
+          </div>
+          
+          <div class="form_box point">
+            <h3>受講スタイル</h3>
+
+            <%= check_box :room, :"オンライン" %>
+            <%= label_tag :room, "オンライン" %>
+            <%= check_box :room, :"教室あり" %>
+            <%= label_tag :room, "教室あり" %>
+          </div>
+          
+          
+          <div class="form_box word point">
+            <h3>言語</h3>
+            <%= check_box :word , :"HTML&CSS"%>
+            <%= label_tag :word, "HTML&CSS" %>
+            <%= check_box :word, :"Javascript" %>
+            <%= label_tag :word, "Javascript" %>
+            <%= check_box :word , :"jQuery"%>
+            <%= label_tag :word, "jQuery" %>
+            <%= check_box :word, :"Ruby/Ruby on Rails" %>
+            <%= label_tag :word, "Ruby/Ruby on Rails" %>
+            <%= check_box :word, :"PHP" %>
+            <%= label_tag :word, "PHP" %>
+            <%= check_box :word , :"Java"%>
+            <%= label_tag :word, "Java" %>
+            <%= check_box :word, :"Python" %>
+            <%= label_tag :word, "Python" %>
+            <%= check_box :word, :"Swift" %>
+            <%= label_tag :word, "Swift" %>
+            <%= check_box :word, :"Scala" %>
+            <%= label_tag :word, "Scala" %>
+            
+            <!--<input type="checkbox">HTML&CSS-->
+            <!--<input type="checkbox">Javascript-->
+            <!--<input type="checkbox">jQuery-->
+            <!--<input type="checkbox">Ruby/Ruby on Rails-->
+            <!--<input type="checkbox">PHP-->
+            <!--<input type="checkbox">Java-->
+            <!--<input type="checkbox">Python-->
+            <!--<input type="checkbox">Swift-->
+            <!--<input type="checkbox">Scala-->
+          </div>
+          
+          <div class="submit point">
+            <%= submit_tag("検索する") %>
+          </div>
+         
+          
+        </nav>
+      <% end %>
+  </div>
+</header>

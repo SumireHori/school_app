@@ -1,0 +1,32 @@
+
+<section class="contents">
+      <h1><%=@school.name %></h1>
+      <%= image_tag "#{@school.name}.1.png" %>
+      <%= image_tag "#{@school.name}.2.png" %>
+      <%= image_tag "#{@school.name}.3.png" %>
+      
+      <div>
+        <i class="fas fa-dollar-sign"></i><%="#{@school.price}" %>
+        <i class="fas fa-home"></i><%= "#{@school.area}" %>
+      </div>
+      
+      <div class="bold memo">
+        <%=@school.memo %>
+      </div>
+      
+      <div>
+        <%=@school.detail %>
+      </div>
+      
+      <div class='url'>
+        公式HP：<%= link_to @school.name, @school.url, {target: "_blank"} %>
+      </div>
+      
+    
+  </section>
+
+
+  
+  
+ 
+  

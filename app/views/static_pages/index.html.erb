@@ -1,0 +1,29 @@
+<% @schools.each do |school| %>
+  <section class="contents">
+    <%= link_to school, class:"content" do %>
+      <h1><%=school.name %></h1>
+      <%= image_tag "#{school.name}.1.png" %>
+      <%= image_tag "#{school.name}.2.png" %>
+      <%= image_tag "#{school.name}.3.png" %>
+      
+      <div>
+        <i class="fas fa-dollar-sign"></i><%="#{school.price}" %>
+        <i class="fas fa-home"></i><%= "#{school.area}" %>
+      </div>
+      
+      <div class="bold">
+        <%=school.memo %>
+      </div>
+      
+      <div>
+        <%=school.detail %>
+      </div>
+      
+    <% end %>
+  
+  </section>
+<% end %>
+
+
+
+

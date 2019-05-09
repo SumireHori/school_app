@@ -1,0 +1,25 @@
+<% @people.each do |person| %>
+  <section class="contents">
+    <%= link_to person, class:"content" do %>
+      <h1><%=school.name %></h1>
+      <%= image_tag "#{person.name}.1.png" %>
+      <%= image_tag "#{person.name}.2.png" %>
+      <%= image_tag "#{person.name}.3.png" %>
+      
+      <div>
+        <i class="fas fa-dollar-sign"></i><%="#{person.price}" %>
+        <i class="fas fa-home"></i><%= "#{person.area}" %>
+      </div>
+      
+      <div class="bold">
+        <%=person.memo %>
+      </div>
+      
+      <div>
+        <%=person.detail %>
+      </div>
+      
+    <% end %>
+  
+  </section>
+<% end %>
