@@ -31,15 +31,17 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'ransack'
 
-group :development, :test do
-  gem 'sqlite3', '1.3.13'
-end
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
 group :production do
   gem 'pg', '0.20.0'
+end
+
+group :development, :test do
+  gem 'sqlite3', '1.3.13'
 end
 
 group :development, :test do
