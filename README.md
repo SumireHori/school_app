@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+”プログラミングスクール検索サイト Cutting Edge"
 
-Things you may want to cover:
+プログラミングスクールの情報と、
+キーワード検索や、学べる言語やスクールの場所で絞り込みができる検索機能を持ったWebアプリケーションです。
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Sumire Hori
